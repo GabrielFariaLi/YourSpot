@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.paginaInicialFragment">
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+        <!-- background_pagina_inicial -->
+        <View
+            android:id="@+id/background_pagina_inicial"
+            android:layout_width="411dp"
+            android:layout_height="783dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="61dp"
+            android:layout_marginBottom="31dp"
+            android:background="@drawable/background_pagina_inicial"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <!-- Bemvindo inicial  -->
+        <View
+            android:id="@+id/bem_vindo_yourSpot"
+            android:layout_width="305dp"
+            android:layout_height="161dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/bem_vindo_incial"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!-- criar_conta_button -->
+        <View
+            android:id="@+id/criar_conta_button"
+            android:layout_width="307dp"
+            android:layout_height="57dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="117dp"
+            android:background="@drawable/criar_conta_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bem_vindo_yourSpot" />
+
+        <!-- eclipse_pagina_inicial1 -->
+        <View
+            android:id="@+id/eclipse_pagina_inicial1"
+            android:layout_width="51.24dp"
+            android:layout_height="50.71dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="325dp"
+            android:layout_marginBottom="29dp"
+            android:alpha="0.7"
+            android:background="@drawable/eclipse"
+            app:layout_constraintBottom_toBottomOf="@+id/criar_conta_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <!-- Já tem uma conta? Faça seu login! -->
+        <TextView
+            android:id="@+id/ja_tem_uma_conta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:layout_marginLeft="96dp"
+            android:layout_marginTop="23dp"
+            android:gravity="top"
+            android:text="@string/ja_tem_uma_conta"
+            android:textAppearance="@style/quatorze_sp_preto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/criar_conta_button" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CadastroFragment">
+
+    <!-- Logo -->
+    <View
+        android:id="@+id/logo"
+        android:layout_width="97dp"
+        android:layout_height="23dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/logo_yourspot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Frame Cadastro -->
+
+    <!-- Precisamos de algumas informações suas, ok? -->
+    <View
+        android:id="@+id/frame_cadas"
+        android:layout_width="338dp"
+        android:layout_height="699dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/frame_cadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/precisamos_"
+        android:layout_width="266dp"
+        android:layout_height="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="top"
+        android:text="@string/precisamos_de_algumas"
+        android:textAppearance="@style/dezesseis_sp"
+        android:textColor="#5E5E5E"
+        app:layout_constraintEnd_toEndOf="@+id/frame_cadas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/frame_cadas"
+        app:layout_constraintTop_toTopOf="@+id/frame_cadas" />
+
+    <!-- Caixa Input "Nome Completo" -->
+    <EditText
+        android:id="@+id/inputnome"
+        android:layout_width="310dp"
+        android:layout_height="58dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="19dp"
+        android:textAppearance="@style/doze_sp"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/nome_completo"
+        android:background="@drawable/template_input"
+        app:layout_constraintEnd_toEndOf="@+id/frame_cadas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/frame_cadas"
+        app:layout_constraintTop_toBottomOf="@+id/precisamos_" />
+
+    <!-- Caixa Input "Email" -->
+    <EditText
+        android:id="@+id/inputemail"
+        android:layout_width="310dp"
+        android:layout_height="58dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/template_input"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/email"
+        android:paddingLeft="19dp"
+        android:textAppearance="@style/doze_sp"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/frame_cadas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/frame_cadas"
+        app:layout_constraintTop_toBottomOf="@+id/inputnome" />
+
+    <!-- Caixa Input "Senha" -->
+    <EditText
+        android:id="@+id/inputsenha"
+        android:layout_width="310dp"
+        android:layout_height="58dp"
+        android:inputType="textPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/template_input"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/senha"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="19dp"
+        android:textAppearance="@style/doze_sp"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/frame_cadas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/frame_cadas"
+        app:layout_constraintTop_toBottomOf="@+id/inputemail" />
+
+    <!-- Caixa Input "Confirmar Senha" -->
+    <EditText
+        android:id="@+id/inputconfirmarsenha"
+        android:layout_width="310dp"
+        android:layout_height="58dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:inputType="textPassword"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/template_input"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/confirmarsenha"
+        android:paddingLeft="19dp"
+        android:textAppearance="@style/doze_sp"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/frame_cadas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/frame_cadas"
+        app:layout_constraintTop_toBottomOf="@+id/inputsenha" />
+
+    <!-- Check Box de aceitação dos termos e condições -->
+    <View
+        android:id="@+id/checkbox_termos"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/checkbox_termos"
+        app:layout_constraintStart_toStartOf="@+id/frame_cadas"
+        app:layout_constraintTop_toBottomOf="@+id/inputconfirmarsenha" />
+
+    <!-- Declaro que li e aceito os termos de condições -->
+    <TextView
+        android:id="@+id/declaracao_termos"
+        android:layout_width="200dp"
+        android:layout_height="9dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="29dp"
+        android:gravity="top"
+        android:text="@string/declaracao_termos"
+        android:textColor="#000000"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/checkbox_termos"
+        app:layout_constraintTop_toBottomOf="@+id/inputconfirmarsenha" />
+
+    <!-- Botão "Cadastrar" -->
+    <ImageButton
+        android:id="@+id/botao_cadastrar"
+        android:layout_width="221dp"
+        android:layout_height="49dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:background="@drawable/botao_cadastrar"
+        app:layout_constraintEnd_toEndOf="@+id/frame_cadas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/frame_cadas"
+        app:layout_constraintTop_toBottomOf="@+id/declaracao_termos" />
+
+    <!-- Já possui uma conta? Faça o login! -->
+    <TextView
+        android:id="@+id/texto_possuiconta"
+        android:layout_width="118dp"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginRight="112dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/texto_possuiconta"
+        android:textColor="#5E5E5E"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/frame_cadas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/frame_cadas"
+        app:layout_constraintTop_toBottomOf="@+id/botao_cadastrar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

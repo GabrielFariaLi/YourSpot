@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:background="#EBEBEB"
+    android:id="@+id/linha_servicos_layout">
+
+    <!-- Imagem do serviço -->
+
+    <ImageView
+        android:id="@+id/imagem_livro_template"
+        android:layout_width="172dp"
+        android:layout_height="140dp"
+        android:text="1"
+        android:textSize="40sp"
+        android:background="@drawable/frame_customizado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Template destaque-->
+    <View
+        android:id="@+id/linha_divisoria_livro_customizado"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/azul_yourspot"
+        android:background="@drawable/divisoria_laranja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toEndOf="@+id/imagem_livro_template"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_livro_template"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <!-- Titulo Serviço-->
+    <TextView
+        android:id="@+id/titulo_livro_template"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:text="Livro - Template"
+        android:textSize="15sp"
+        android:textColor="@color/azul_yourspot"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagem_livro_template"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Preço -->
+    <TextView
+        android:id="@+id/descricao_livro_template"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_marginStart="16dp"
+        android:text="Essa é uma breve descrição exemplo de um Livro publicado no yourspot :)"
+       android:ems="10"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imagem_livro_template"
+        app:layout_constraintTop_toBottomOf="@+id/linha_divisoria_livro_customizado" />
+
+    <!-- Cidade do serviço -->
+    <TextView
+        android:id="@+id/tema_livro_template"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Física"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagem_livro_template"
+        app:layout_constraintTop_toBottomOf="@+id/descricao_livro_template"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Horario Publicação -->
+    <TextView
+        android:id="@+id/horario_publicado_livro_customizado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Hoje às 19:12"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagem_livro_template"
+        app:layout_constraintTop_toBottomOf="@+id/tema_livro_template"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Coração -->
+    <View
+        android:id="@+id/comentario_icon_livro_customizado"
+        android:layout_width="19.17dp"
+        android:layout_height="19.17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/chat_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagem_livro_template"
+        app:layout_constraintTop_toBottomOf="@+id/horario_publicado_livro_customizado"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Chat -->
+    <View
+        android:id="@+id/like_icon_livro_customizado"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/iconecoracao_menuinf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/comentario_icon_livro_customizado"
+        app:layout_constraintTop_toBottomOf="@+id/horario_publicado_livro_customizado"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Compartilhar -->
+    <View
+        android:id="@+id/compartilhar_icon_livro_customizado"
+        android:layout_width="19.17dp"
+        android:layout_height="19dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/compartilhar_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/like_icon_livro_customizado"
+        app:layout_constraintTop_toBottomOf="@+id/horario_publicado_livro_customizado"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

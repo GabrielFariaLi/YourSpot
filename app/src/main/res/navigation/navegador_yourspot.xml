@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegador_yourspot"
+    app:startDestination="@id/paginaInicialFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ulp.pt.yourspot.fragments.loginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_paginaInicialFragment"
+            app:destination="@id/paginaInicialFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_cadastroFragment"
+            app:destination="@id/cadastroFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroFragment"
+        android:name="ulp.pt.yourspot.fragments.CadastroFragment"
+        android:label="fragment_cadastro"
+        tools:layout="@layout/fragment_cadastro" >
+        <action
+            android:id="@+id/action_cadastroFragment_to_paginaInicialFragment"
+            app:destination="@id/paginaInicialFragment" />
+        <action
+            android:id="@+id/action_cadastroFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_cadastroFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paginaInicialFragment"
+        android:name="ulp.pt.yourspot.fragments.paginaInicialFragment"
+        android:label="fragment_pagina_inicial"
+        tools:layout="@layout/fragment_pagina_inicial" >
+        <action
+            android:id="@+id/action_paginaInicialFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_paginaInicialFragment_to_cadastroFragment"
+            app:destination="@id/cadastroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="ulp.pt.yourspot.fragments.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page">
+        <argument
+            android:name="ID_utilizador"
+            android:defaultValue="0"
+            app:argType="integer"/>
+        <action
+            android:id="@+id/action_homePageFragment_to_gestaoPessoalFragment"
+            app:destination="@id/gestaoPessoalFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_areaAcademicaFragment"
+            app:destination="@id/areaAcademicaFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_mensagensFragment"
+            app:destination="@id/mensagensFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_postagensCurtidasFragment"
+            app:destination="@id/postagensCurtidasFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_feedConhecimentoFragment"
+            app:destination="@id/feedConhecimentoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/areaAcademicaFragment"
+        android:name="ulp.pt.yourspot.fragments.AreaAcademicaFragment"
+        android:label="fragment_area_academica"
+        tools:layout="@layout/fragment_area_academica" >
+        <action
+            android:id="@+id/action_areaAcademicaFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_areaAcademicaFragment_to_feedConhecimentoFragment"
+            app:destination="@id/feedConhecimentoFragment" />
+        <action
+            android:id="@+id/action_areaAcademicaFragment_to_postagensCurtidasFragment"
+            app:destination="@id/postagensCurtidasFragment" />
+        <action
+            android:id="@+id/action_areaAcademicaFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_areaAcademicaFragment_to_mensagensFragment"
+            app:destination="@id/mensagensFragment" />
+        <argument
+            android:name="ID_utilizador"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_areaAcademicaFragment_to_explorarExerciciosFragment"
+            app:destination="@id/explorarExerciciosFragment" />
+        <action
+            android:id="@+id/action_areaAcademicaFragment_to_explorarTextosFragment"
+            app:destination="@id/explorarTextosFragment" />
+        <action
+            android:id="@+id/action_areaAcademicaFragment_to_explorarLivrosFragment"
+            app:destination="@id/explorarLivrosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedConhecimentoFragment"
+        android:name="ulp.pt.yourspot.fragments.FeedConhecimentoFragment"
+        android:label="fragment_feed_conhecimento"
+        tools:layout="@layout/fragment_feed_conhecimento" >
+        <action
+            android:id="@+id/action_feedConhecimentoFragment_to_gestaoPessoalFragment"
+            app:destination="@id/gestaoPessoalFragment" />
+        <action
+            android:id="@+id/action_feedConhecimentoFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_feedConhecimentoFragment_to_postagensCurtidasFragment"
+            app:destination="@id/postagensCurtidasFragment" />
+        <action
+            android:id="@+id/action_feedConhecimentoFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_feedConhecimentoFragment_to_mensagensFragment"
+            app:destination="@id/mensagensFragment" />
+        <argument
+            android:name="ID_utilizador"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/gestaoPessoalFragment"
+        android:name="ulp.pt.yourspot.fragments.GestaoPessoalFragment"
+        android:label="GestaoPessoalFragment" >
+        <action
+            android:id="@+id/action_gestaoPessoalFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_gestaoPessoalFragment_to_postagensCurtidasFragment"
+            app:destination="@id/postagensCurtidasFragment" />
+        <action
+            android:id="@+id/action_gestaoPessoalFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_gestaoPessoalFragment_to_mensagensFragment"
+            app:destination="@id/mensagensFragment" />
+        <action
+            android:id="@+id/action_gestaoPessoalFragment_to_feedConhecimentoFragment"
+            app:destination="@id/feedConhecimentoFragment" />
+        <argument
+            android:name="ID_utilizador"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/mensagensFragment"
+        android:name="ulp.pt.yourspot.fragments.MensagensFragment"
+        android:label="MensagensFragment" >
+        <action
+            android:id="@+id/action_mensagensFragment_to_postagensCurtidasFragment"
+            app:destination="@id/postagensCurtidasFragment" />
+        <action
+            android:id="@+id/action_mensagensFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_mensagensFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_mensagensFragment_to_feedConhecimentoFragment"
+            app:destination="@id/feedConhecimentoFragment" />
+        <argument
+            android:name="ID_utilizador"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="ulp.pt.yourspot.fragments.PerfilFragment"
+        android:label="PerfilFragment" >
+        <action
+            android:id="@+id/action_perfilFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_feedConhecimentoFragment"
+            app:destination="@id/feedConhecimentoFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_mensagensFragment"
+            app:destination="@id/mensagensFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_postagensCurtidasFragment"
+            app:destination="@id/postagensCurtidasFragment" />
+        <argument
+            android:name="ID_utilizador"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/postagensCurtidasFragment"
+        android:name="ulp.pt.yourspot.fragments.PostagensCurtidasFragment"
+        android:label="PostagensCurtidasFragment" >
+        <action
+            android:id="@+id/action_postagensCurtidasFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_postagensCurtidasFragment_to_mensagensFragment"
+            app:destination="@id/mensagensFragment" />
+        <action
+            android:id="@+id/action_postagensCurtidasFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_postagensCurtidasFragment_to_feedConhecimentoFragment"
+            app:destination="@id/feedConhecimentoFragment" />
+        <argument
+            android:name="ID_utilizador"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/explorarExerciciosFragment"
+        android:name="ulp.pt.yourspot.fragments.ExplorarExerciciosFragment"
+        android:label="fragment_explorar_exercicios"
+        tools:layout="@layout/fragment_explorar_exercicios" >
+        <action
+            android:id="@+id/action_explorarExerciciosFragment_to_areaAcademicaFragment"
+            app:destination="@id/areaAcademicaFragment" />
+        <argument
+            android:name="ID_utilizador"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_explorarExerciciosFragment_to_filtroAreaAcademicaFragment"
+            app:destination="@id/filtroAreaAcademicaFragment" />
+        <action
+            android:id="@+id/action_explorarExerciciosFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_explorarExerciciosFragment_to_feedConhecimentoFragment"
+            app:destination="@id/feedConhecimentoFragment" />
+        <action
+            android:id="@+id/action_explorarExerciciosFragment_to_mensagensFragment"
+            app:destination="@id/mensagensFragment" />
+        <action
+            android:id="@+id/action_explorarExerciciosFragment_to_postagensCurtidasFragment"
+            app:destination="@id/postagensCurtidasFragment" />
+        <action
+            android:id="@+id/action_explorarExerciciosFragment_to_publicarExercicios"
+            app:destination="@id/publicarExercicios" />
+    </fragment>
+    <fragment
+        android:id="@+id/filtroAreaAcademicaFragment"
+        android:name="ulp.pt.yourspot.fragments.FiltroAreaAcademicaFragment"
+        android:label="fragment_filtro_area_academica"
+        tools:layout="@layout/fragment_filtro_area_academica" >
+        <argument
+            android:name="ID_utilizador"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="categoria"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_filtroAreaAcademicaFragment_to_explorarExerciciosFragment"
+            app:destination="@id/explorarExerciciosFragment" />
+        <action
+            android:id="@+id/action_filtroAreaAcademicaFragment_to_explorarTextosFragment"
+            app:destination="@id/explorarTextosFragment" />
+        <action
+            android:id="@+id/action_filtroAreaAcademicaFragment_to_explorarLivrosFragment"
+            app:destination="@id/explorarLivrosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/explorarTextosFragment"
+        android:name="ulp.pt.yourspot.fragments.ExplorarTextosFragment"
+        android:label="fragment_explorar_textos"
+        tools:layout="@layout/fragment_explorar_textos" >
+        <action
+            android:id="@+id/action_explorarTextosFragment_to_filtroAreaAcademicaFragment"
+            app:destination="@id/filtroAreaAcademicaFragment" />
+        <action
+            android:id="@+id/action_explorarTextosFragment_to_areaAcademicaFragment"
+            app:destination="@id/areaAcademicaFragment" />
+        <argument
+            android:name="ID_utilizador"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_explorarTextosFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_explorarTextosFragment_to_postagensCurtidasFragment"
+            app:destination="@id/postagensCurtidasFragment" />
+        <action
+            android:id="@+id/action_explorarTextosFragment_to_mensagensFragment"
+            app:destination="@id/mensagensFragment" />
+        <action
+            android:id="@+id/action_explorarTextosFragment_to_feedConhecimentoFragment"
+            app:destination="@id/feedConhecimentoFragment" />
+        <action
+            android:id="@+id/action_explorarTextosFragment_to_publicarTextos"
+            app:destination="@id/publicarTextos" />
+    </fragment>
+    <fragment
+        android:id="@+id/explorarLivrosFragment"
+        android:name="ulp.pt.yourspot.fragments.ExplorarLivrosFragment"
+        android:label="fragment_explorar_livros"
+        tools:layout="@layout/fragment_explorar_livros" >
+        <action
+            android:id="@+id/action_explorarLivrosFragment_to_areaAcademicaFragment"
+            app:destination="@id/areaAcademicaFragment" />
+        <action
+            android:id="@+id/action_explorarLivrosFragment_to_filtroAreaAcademicaFragment"
+            app:destination="@id/filtroAreaAcademicaFragment" />
+        <argument
+            android:name="ID_utilizador"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_explorarLivrosFragment_to_feedConhecimentoFragment"
+            app:destination="@id/feedConhecimentoFragment" />
+        <action
+            android:id="@+id/action_explorarLivrosFragment_to_postagensCurtidasFragment"
+            app:destination="@id/postagensCurtidasFragment" />
+        <action
+            android:id="@+id/action_explorarLivrosFragment_to_mensagensFragment"
+            app:destination="@id/mensagensFragment" />
+        <action
+            android:id="@+id/action_explorarLivrosFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_explorarLivrosFragment_to_publicarLivros"
+            app:destination="@id/publicarLivros" />
+    </fragment>
+    <fragment
+        android:id="@+id/publicarExercicios"
+        android:name="ulp.pt.yourspot.fragments.PublicarExercicios"
+        android:label="fragment_publicar_exercicios"
+        tools:layout="@layout/fragment_publicar_exercicios" >
+        <action
+            android:id="@+id/action_publicarExercicios_to_explorarExerciciosFragment"
+            app:destination="@id/explorarExerciciosFragment" />
+        <action
+            android:id="@+id/action_publicarExercicios_to_postagensCurtidasFragment"
+            app:destination="@id/postagensCurtidasFragment" />
+        <action
+            android:id="@+id/action_publicarExercicios_to_mensagensFragment"
+            app:destination="@id/mensagensFragment" />
+        <action
+            android:id="@+id/action_publicarExercicios_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_publicarExercicios_to_feedConhecimentoFragment"
+            app:destination="@id/feedConhecimentoFragment" />
+        <argument
+            android:name="ID_utilizador"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/publicarLivros"
+        android:name="ulp.pt.yourspot.fragments.PublicarLivros"
+        android:label="fragment_publicar_livros"
+        tools:layout="@layout/fragment_publicar_livros" >
+        <action
+            android:id="@+id/action_publicarLivros_to_explorarLivrosFragment"
+            app:destination="@id/explorarLivrosFragment" />
+        <action
+            android:id="@+id/action_publicarLivros_to_postagensCurtidasFragment"
+            app:destination="@id/postagensCurtidasFragment" />
+        <action
+            android:id="@+id/action_publicarLivros_to_mensagensFragment"
+            app:destination="@id/mensagensFragment" />
+        <action
+            android:id="@+id/action_publicarLivros_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_publicarLivros_to_feedConhecimentoFragment"
+            app:destination="@id/feedConhecimentoFragment" />
+        <argument
+            android:name="ID_utilizador"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/publicarTextos"
+        android:name="ulp.pt.yourspot.fragments.PublicarTextos"
+        android:label="fragment_publicar_textos"
+        tools:layout="@layout/fragment_publicar_textos" >
+        <action
+            android:id="@+id/action_publicarTextos_to_explorarTextosFragment"
+            app:destination="@id/explorarTextosFragment" />
+        <action
+            android:id="@+id/action_publicarTextos_to_mensagensFragment"
+            app:destination="@id/mensagensFragment" />
+        <action
+            android:id="@+id/action_publicarTextos_to_postagensCurtidasFragment"
+            app:destination="@id/postagensCurtidasFragment" />
+        <action
+            android:id="@+id/action_publicarTextos_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_publicarTextos_to_feedConhecimentoFragment"
+            app:destination="@id/feedConhecimentoFragment" />
+        <argument
+            android:name="ID_utilizador"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

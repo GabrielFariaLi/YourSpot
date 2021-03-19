@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#EBEBEB"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FiltroAreaAcademicaFragment">
+
+    <!-- menu_superior -->
+    <View
+        android:id="@+id/menu_superior_filtro_area_academica"
+        android:layout_width="411dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/menu_superior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/divosoria_filtro_area_academica_1"/>
+
+    <!-- Logo YourSpot -->
+    <View
+        android:id="@+id/logo_yourspot_filtro_area_academica"
+        android:layout_width="92dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="154dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/logo_yourspot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Divisoria Laranja 001 -->
+    <View
+        android:id="@+id/divosoria_filtro_area_academica_1"
+        android:layout_width="411dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/divisoria_laranja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_yourspot_filtro_area_academica" />
+
+
+    <!-- Seta Icon Area academica -->
+    <View
+        android:id="@+id/seta_retorno_filtro_area_academica"
+        android:layout_width="26.53dp"
+        android:layout_height="24.63dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/seta_retorno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divosoria_filtro_area_academica_1" />
+
+
+    <!-- titulo_filtro -->
+    <View
+        android:id="@+id/titulo_filt"
+        android:layout_width="127dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/titulo_filtro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seta_retorno_filtro_area_academica" />
+
+    <!-- Divisoria Laranja 001 -->
+    <View
+        android:id="@+id/divosoria_filtro_area_academica_2"
+        android:layout_width="343dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/divisoria_laranja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_filt" />
+
+    <!-- Categoria -->
+    <TextView
+        android:id="@+id/categoria_filtro_area_academica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="29dp"
+        android:gravity="top"
+        android:text="@string/categoria"
+        android:textAppearance="@style/dezesseis_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divosoria_filtro_area_academica_2" />
+
+    <!-- Spinner categoria -->
+    <Spinner
+        android:id="@+id/spinner_categoria_filtro_area_academica"
+        android:layout_width="370dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/spinner_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoria_filtro_area_academica" />
+
+    <!-- Explorar meu Feed De Conhecimento -->
+    <View
+        android:id="@+id/button_mostrar_resultados_filtro_area_academica"
+        android:layout_width="251dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/mostrar_resultados_filtro_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_categoria_filtro_area_academica" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

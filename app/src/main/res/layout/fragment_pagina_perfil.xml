@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PerfilFragment">
+
+    <!-- Fundo azul superior -->
+
+    <View
+        android:id="@+id/fundo_azul_perfil"
+        android:layout_width="446dp"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/fundo_azul_perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Vetor Ilustrativo de fundo da pagina de perfil -->
+
+    <!-- Menu superior esquerdo da página do perfil -->
+
+    <View
+        android:id="@+id/vector"
+        android:layout_width="163dp"
+        android:layout_height="867dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/vetorilustracao_fundo_perfil"
+        android:rotation="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fundo_azul_perfil" />
+
+
+    <!-- Logo Ilustrado -->
+    <View
+        android:id="@+id/logo_perfil"
+        android:layout_width="422dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/logo_ilustrado_feed"
+        app:layout_constraintEnd_toEndOf="@+id/fundo_azul_perfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fundo_azul_perfil" />
+
+    <!-- Seta retorno laranja -->
+    <ImageButton
+        android:id="@+id/seta_retorno_perfil"
+        android:layout_width="27dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/seta_retorno_laranja"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_perfil" />
+
+    <!-- Ilustração página do perfil -->
+    <View
+        android:id="@+id/ilustracao_pagina_perfil"
+        android:layout_width="66.92dp"
+        android:layout_height="58.76dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="284dp"
+        android:layout_marginLeft="284dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/ilustracao_pagina_perfil"
+        app:layout_constraintStart_toEndOf="@+id/seta_retorno_perfil"
+        app:layout_constraintTop_toBottomOf="@+id/logo_perfil" />
+
+    <!-- Retângulo do menu inferior -->
+    <View
+        android:id="@+id/retangulomenuinferior_perfil"
+        android:layout_width="411dp"
+        android:layout_height="67dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/barra_de_acao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Ícone de pesquisa da barra inferior -->
+
+    <ImageButton
+        android:id="@+id/iconepesquisa_perfil"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/iconepesquisa_menuinf"
+        android:translationZ="90dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/retangulomenuinferior_perfil" />
+
+    <!-- Ícone de coração da barra inferior -->
+
+    <ImageButton
+        android:id="@+id/iconecoracao_perfil"
+        android:layout_width="31dp"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/iconecoracao_menuinf"
+        android:translationZ="90dp"
+        app:layout_constraintStart_toEndOf="@+id/iconepesquisa_perfil"
+        app:layout_constraintTop_toTopOf="@+id/retangulomenuinferior_perfil" />
+
+    <!-- Ícone de mensagem da barra inferior -->
+
+    <ImageButton
+        android:id="@+id/iconemensagem_perfil"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/iconemensagem_menuinf"
+
+        android:translationZ="90dp"
+        app:layout_constraintStart_toEndOf="@+id/iconecoracao_perfil"
+        app:layout_constraintTop_toTopOf="@+id/retangulomenuinferior_perfil" />
+
+    <!-- Ícone de casa da barra inferior -->
+
+    <ImageButton
+        android:id="@+id/iconecasa_perfil"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:background="@drawable/iconecasa_menuinf"
+
+        android:translationZ="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iconemensagem_perfil"
+        app:layout_constraintTop_toTopOf="@+id/retangulomenuinferior_perfil" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="quatorze_sp_preto">
+        <item name="android:textSize">
+            14sp
+        </item>
+
+        <item name="android:textColor">
+            #153B50
+        </item>
+    </style>
+
+    <style name="dezesseis_sp">
+        <item name="android:textSize">
+            16sp
+        </item>
+    </style>
+
+    <style name="doze_sp">
+        <item name="android:textSize">
+            12sp
+        </item>
+    </style>
+
+    <style name="dezoito_sp">
+        <item name="android:textSize">
+            18sp
+        </item>
+    </style>
+</resources>

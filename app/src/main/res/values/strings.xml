@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">YourSpot</string>
+    <string name="bem_vindo">Bem vindo!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ja_tem_uma_conta">Já tem uma conta? Faça seu login!</string>
+    <string name="precisamos_de_algumas">Precisamos de algumas informações suas, ok?</string>
+    <string name="nome_completo">NOME COMPLETO</string>
+    <string name="ou_pesquisar">ou  pesquisar apenas</string>
+    <string name="exercicio_template_descricao">Explicar o role dos exercicios e como eles são selecionados :)</string>
+    <string name="email">E-MAIL</string>
+    <string name="senha">SENHA</string>
+    <string name="confirmarsenha">CONFIRMAR SENHA</string>
+    <string name="declaracao_termos">DECLARO QUE LI E ACEITO OS TERMOS DE CONDIÇÕES</string>
+    <string name="texto_possuiconta">Já possui uma conta? Faça o login!</string>
+    <string name="nao_tem_conta">Não tem uma conta? Cadastre-se!</string>
+    <string name="esqueci_senha">Esqueci minha senha</string>
+    <string name="barradepesquisa">Pesquisar...</string>
+    <string name="area_gestao_pessoal_descricao_template">Onde todas as suas coisas estão e bla bla bla Aqui você pode salvar coisas e etc muito bom!11</string>
+    <string name="area_academica_descricao_template">Onde você pode encontrar exercícios, recomendações e outras coisas interessantes para sua vida!!!</string>
+    <string name="ola_menu_template">"Olá, Nome de Utilizador!"</string>
+    <string name="navigation_drawer_open">"Open Navigation Drawer"</string>
+    <string name="navigation_drawer_close">"Close Navigation Drawer"</string>
+    <string name="perfil">Perfil</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="suporte">Suporte</string>
+    <string name="categoria">Categoria</string>
+</resources>

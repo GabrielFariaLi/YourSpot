@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.loginFragment">
+
+
+    <!-- Logo superior esquerdo -->
+    <View
+        android:id="@+id/logo_login"
+        android:layout_width="97dp"
+        android:layout_height="23dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/logo_yourspot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Frame Login (Caixa Cinzenta) -->
+
+    <View
+        android:id="@+id/caixa_cinzenta_fundo_login"
+        android:layout_width="338dp"
+        android:layout_height="547dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/caixa_cinzenta_fundo_login"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_login" />
+
+    <!-- Título superior -->
+    <View
+        android:id="@+id/titulo_superior"
+        android:layout_width="266dp"
+        android:layout_height="96dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/titulo_superior_login"
+        android:translationZ="90dp"
+        app:layout_constraintEnd_toEndOf="@+id/caixa_cinzenta_fundo_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/caixa_cinzenta_fundo_login"
+        app:layout_constraintTop_toTopOf="@+id/caixa_cinzenta_fundo_login" />
+
+    <!-- Caixa Input "Email" -->
+
+    <EditText
+        android:id="@+id/inputemail_login"
+        android:layout_width="310dp"
+        android:layout_height="58dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/template_input"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/email"
+        android:paddingLeft="19dp"
+        android:textAppearance="@style/doze_sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:translationZ="90dp"
+        app:layout_constraintEnd_toEndOf="@+id/caixa_cinzenta_fundo_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/caixa_cinzenta_fundo_login"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_superior" />
+
+    <!-- Caixa Input "Senha" -->
+
+    <EditText
+        android:id="@+id/inputsenha_login"
+        android:layout_width="310dp"
+        android:layout_height="58dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/template_input"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        android:paddingLeft="19dp"
+        android:textAppearance="@style/doze_sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:translationZ="90dp"
+        app:layout_constraintEnd_toEndOf="@+id/caixa_cinzenta_fundo_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/caixa_cinzenta_fundo_login"
+        app:layout_constraintTop_toBottomOf="@+id/inputemail_login" />
+
+    <!-- Botão Entrar - Login -->
+
+    <ImageButton
+        android:id="@+id/bota_entrar_login"
+        android:layout_width="221dp"
+        android:layout_height="49dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:background="@drawable/botao_entrar_login"
+        android:translationZ="90dp"
+        app:layout_constraintEnd_toEndOf="@+id/caixa_cinzenta_fundo_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/caixa_cinzenta_fundo_login"
+        app:layout_constraintTop_toBottomOf="@+id/inputsenha_login" />
+
+    <!-- Não tem uma conta? Cadastre-se! -->
+
+    <TextView
+        android:id="@+id/n_o_tem_uma"
+        android:layout_width="208dp"
+        android:layout_height="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/nao_tem_conta"
+        android:textColor="#5E5E5E"
+        android:textSize="12sp"
+        android:translationZ="90dp"
+        app:layout_constraintEnd_toEndOf="@+id/caixa_cinzenta_fundo_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/caixa_cinzenta_fundo_login"
+        app:layout_constraintTop_toBottomOf="@+id/bota_entrar_login" />
+
+    <!-- Esqueci minha senha -->
+
+    <TextView
+        android:id="@+id/esqueci_min"
+        android:layout_width="114dp"
+        android:layout_height="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginRight="112dp"
+        android:gravity="top"
+        android:text="@string/esqueci_senha"
+        android:textColor="#5D2E46"
+        android:textSize="12sp"
+        android:translationZ="90dp"
+        app:layout_constraintEnd_toEndOf="@+id/caixa_cinzenta_fundo_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/caixa_cinzenta_fundo_login"
+        app:layout_constraintTop_toBottomOf="@+id/n_o_tem_uma" />
+
+    <TextView
+        android:id="@+id/id_utilizador_placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1015824899662",
+    "firebase_url": "https://yourspot-300e2-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "yourspot-300e2",
+    "storage_bucket": "yourspot-300e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015824899662:android:059acf9ffac37cfd02ad1f",
+        "android_client_info": {
+          "package_name": "ulp.pt.yourspot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015824899662-jda91868mmievmk9vnvrlstvopvelq5e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ulp.pt.yourspot",
+            "certificate_hash": "5abd1afd93c658200f722cc5ecfda1f2ac4273eb"
+          }
+        },
+        {
+          "client_id": "1015824899662-fbcc289sdqqk70bp5866if95dm86m9c5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7wxgpHAQ1gJiF2Wdgyeo_MBxxHsxAcXo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015824899662-fbcc289sdqqk70bp5866if95dm86m9c5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

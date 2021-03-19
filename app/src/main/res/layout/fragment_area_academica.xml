@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AreaAcademicaFragment">
+    <!-- menu_superior -->
+    <View
+        android:id="@+id/menu_superior_area_academica"
+        android:layout_width="411dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/menu_superior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/divosoria_area_academica_1"/>
+
+
+    <!-- Logo YourSpot -->
+    <View
+        android:id="@+id/logo_yourspot_area_academica"
+        android:layout_width="92dp"
+        android:layout_height="21dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="154dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/logo_yourspot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Divisoria Laranja 001 -->
+    <View
+        android:id="@+id/divosoria_area_academica_1"
+        android:layout_width="411dp"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/divisoria_laranja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_yourspot_area_academica" />
+
+
+    <ScrollView
+        android:id="@+id/scroolView_explorar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="67dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EBEBEB"
+            android:orientation="vertical"
+            tools:context=".fragments.explorarFragment">
+
+
+            <!-- Titulo Area Academica -->
+            <View
+                android:id="@+id/titulo_area"
+                android:layout_width="227dp"
+                android:layout_height="79dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="61dp"
+                android:layout_marginEnd="128dp"
+                android:background="@drawable/titulo_area_academica"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Seta Icon Area academica -->
+            <View
+                android:id="@+id/seta_retorno_area_academica"
+                android:layout_width="26.53dp"
+                android:layout_height="24.63dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="33dp"
+                android:background="@drawable/seta_retorno"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Explorar meu Feed De Conhecimento -->
+            <View
+                android:id="@+id/explorar_feed_button"
+                android:layout_width="272dp"
+                android:layout_height="64dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="72dp"
+                android:layout_marginLeft="72dp"
+                android:layout_marginTop="46dp"
+                android:background="@drawable/explorar_feed_button_area_academica"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titulo_area" />
+
+            <!-- ou pesquisar apenas -->
+            <TextView
+                android:id="@+id/ou_pesquisar"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal|top"
+                android:text="@string/ou_pesquisar"
+                android:textAppearance="@style/quatorze_sp_preto"
+                android:textColor="#5E5E5E"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/explorar_feed_button" />
+
+            <!-- Frame exercicios -->
+            <View
+                android:id="@+id/frame_exerc"
+                android:layout_width="376dp"
+                android:layout_height="156dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/frame_exercicios_area_academica"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ou_pesquisar" />
+
+            <!-- Explicar o role dos exercicios e como eles são selecionados :) -->
+            <TextView
+                android:id="@+id/exercicio_descricao_template"
+                android:layout_width="164dp"
+                android:layout_height="85dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="33dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="56dp"
+                android:gravity="top"
+                android:text="@string/exercicio_template_descricao"
+                android:textAppearance="@style/quatorze_sp_preto"
+                android:textColor="#5E5E5E"
+                app:layout_constraintBottom_toBottomOf="@+id/frame_exerc"
+                app:layout_constraintEnd_toEndOf="@+id/frame_exerc"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/frame_exerc"
+                app:layout_constraintTop_toTopOf="@+id/frame_exerc"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <!-- Frame Textos -->
+            <View
+                android:id="@+id/frame_texto"
+                android:layout_width="376dp"
+                android:layout_height="156dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/frame_textos_area_academica"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frame_exerc" />
+
+            <!-- Explicar o role dos exercicios e como eles são selecionados :) -->
+            <TextView
+                android:id="@+id/texto_descricao_template"
+                android:layout_width="164dp"
+                android:layout_height="85dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="33dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="55dp"
+                android:gravity="top"
+                android:text="@string/exercicio_template_descricao"
+                android:textAppearance="@style/quatorze_sp_preto"
+                android:textColor="#5E5E5E"
+                app:layout_constraintBottom_toBottomOf="@+id/frame_texto"
+                app:layout_constraintEnd_toEndOf="@+id/frame_texto"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/frame_texto"
+                app:layout_constraintTop_toTopOf="@+id/frame_texto"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <!-- Frame Livros -->
+            <View
+                android:id="@+id/frame_livro"
+                android:layout_width="376dp"
+                android:layout_height="156dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="29dp"
+                android:background="@drawable/frame_livros_area_academica"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frame_texto" />
+
+            <!-- Explicar o role dos exercicios e como eles são selecionados :) -->
+            <TextView
+                android:id="@+id/livro_descricao_template"
+                android:layout_width="164dp"
+                android:layout_height="85dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="33dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="55dp"
+                android:gravity="top"
+                android:text="@string/exercicio_template_descricao"
+                android:textAppearance="@style/quatorze_sp_preto"
+                android:textColor="#5E5E5E"
+                app:layout_constraintBottom_toBottomOf="@+id/frame_livro"
+                app:layout_constraintEnd_toEndOf="@+id/frame_livro"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/frame_livro"
+                app:layout_constraintTop_toTopOf="@+id/frame_livro"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <!-- Barra de Ação -->
+    <View
+        android:id="@+id/barra_de_acao_area_academica"
+        android:layout_width="411dp"
+        android:layout_height="67dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/barra_de_acao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroolView_explorar" />
+
+    <!-- Ícone de pesquisa da barra inferior -->
+
+    <ImageButton
+        android:id="@+id/iconepesquisa_area_academica"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/iconepesquisa_menuinf"
+        android:translationZ="90dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/barra_de_acao_area_academica" />
+
+    <!-- Ícone de coração da barra inferior -->
+
+    <ImageButton
+        android:id="@+id/iconecoracao_area_academica"
+        android:layout_width="31dp"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/iconecoracao_menuinf"
+        android:translationZ="90dp"
+        app:layout_constraintStart_toEndOf="@+id/iconepesquisa_area_academica"
+        app:layout_constraintTop_toTopOf="@+id/barra_de_acao_area_academica" />
+
+    <!-- Ícone de mensagem da barra inferior -->
+
+    <ImageButton
+        android:id="@+id/iconemensagem_area_academica"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/iconemensagem_menuinf"
+
+
+        app:layout_constraintStart_toEndOf="@+id/iconecoracao_area_academica"
+        app:layout_constraintTop_toTopOf="@+id/barra_de_acao_area_academica" />
+
+    <!-- Ícone de casa da barra inferior -->
+
+    <ImageButton
+        android:id="@+id/iconecasa_area_academica"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:background="@drawable/iconecasa_menuinf"
+
+        android:translationZ="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iconemensagem_area_academica"
+        app:layout_constraintTop_toTopOf="@+id/barra_de_acao_area_academica" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

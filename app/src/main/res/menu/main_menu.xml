@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/perfil_nav"
+            android:icon="@drawable/perfil_icon"
+            android:iconTint="@color/laranja_yourspot"
+            android:title="@string/perfil" />
+        <item
+            android:id="@+id/config_nav"
+            android:icon="@drawable/config_icon"
+            android:iconTint="@color/laranja_yourspot"
+            android:title="@string/configuracoes" />
+        <item
+            android:id="@+id/suporte_nav"
+            android:icon="@drawable/suporte_icon"
+            android:iconTint="@color/laranja_yourspot"
+            android:title="@string/suporte" />
+    </group>
+
+</menu>

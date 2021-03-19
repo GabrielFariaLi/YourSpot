@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomePageFragment">
+
+    <!-- menu_superior -->
+    <View
+        android:id="@+id/menu_superior_homepage"
+        android:layout_width="411dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/menu_superior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/divosoria_homepage_1"/>
+
+
+    <!-- Logo YourSpot -->
+    <View
+        android:id="@+id/logo_yourspot_homepage"
+        android:layout_width="92dp"
+        android:layout_height="21dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="154dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/logo_yourspot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Divisoria Laranja 001 -->
+    <View
+        android:id="@+id/divosoria_homepage_1"
+        android:layout_width="411dp"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/divisoria_laranja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_yourspot_homepage" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="58dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout_home_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- background_homepage -->
+            <View
+                android:id="@+id/background_homepage"
+                android:layout_width="411dp"
+                android:layout_height="708dp"
+                android:background="@drawable/background_homepage"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <!-- Titulo HomePage -->
+            <View
+                android:id="@+id/titulo_homepage"
+                android:layout_width="267dp"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="72dp"
+                android:layout_marginLeft="72dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/titulo_homepage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- frame_area_gestao_pessoal -->
+            <View
+                android:id="@+id/frame_area_gestao_pessoal"
+                android:layout_width="376dp"
+                android:layout_height="198dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/frame_area_gestao_pessoal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titulo_homepage" />
+
+            <!-- Onde todas as suas coisas estão e bla bla bla Aqui você pode salvar coisas e etc muito bom!11 -->
+            <TextView
+                android:id="@+id/onde_todas_"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="33dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="58dp"
+                android:gravity="top"
+                android:text="@string/area_gestao_pessoal_descricao_template"
+                android:textAppearance="@style/quatorze_sp_preto"
+                android:textColor="#5E5E5E"
+                app:layout_constraintBottom_toBottomOf="@+id/frame_area_gestao_pessoal"
+                app:layout_constraintEnd_toEndOf="@+id/frame_area_gestao_pessoal"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/frame_area_gestao_pessoal"
+                app:layout_constraintTop_toTopOf="@+id/frame_area_gestao_pessoal"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <!-- frame_area_academica -->
+            <View
+                android:id="@+id/frame_area_academica"
+                android:layout_width="376dp"
+                android:layout_height="198dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="99dp"
+                android:background="@drawable/frame_area_academica"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frame_area_gestao_pessoal" />
+
+
+            <!-- Onde você pode encontrar exercícios, recomendações e outras coisas interessantes para sua vida!!! -->
+            <TextView
+                android:id="@+id/onde_voc_po"
+                android:layout_width="164dp"
+                android:layout_height="85dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="33dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="66dp"
+                android:gravity="top"
+                android:text="@string/area_academica_descricao_template"
+                android:textAppearance="@style/quatorze_sp_preto"
+                android:textColor="#5E5E5E"
+                app:layout_constraintBottom_toBottomOf="@+id/frame_area_academica"
+                app:layout_constraintEnd_toEndOf="@+id/frame_area_academica"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/frame_area_academica"
+                app:layout_constraintTop_toTopOf="@+id/frame_area_academica"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <!-- Barra de Ação -->
+    <View
+        android:id="@+id/barra_de_acao_homepage"
+        android:layout_width="411dp"
+        android:layout_height="67dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/barra_de_acao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!-- Ícone de pesquisa da barra inferior -->
+
+    <ImageButton
+        android:id="@+id/iconepesquisa_homepage"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/iconepesquisa_menuinf"
+        android:translationZ="90dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/barra_de_acao_homepage" />
+
+    <!-- Ícone de coração da barra inferior -->
+
+    <ImageButton
+        android:id="@+id/iconecoracao_homepage"
+        android:layout_width="31dp"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/iconecoracao_menuinf"
+        android:translationZ="90dp"
+        app:layout_constraintStart_toEndOf="@+id/iconepesquisa_homepage"
+        app:layout_constraintTop_toTopOf="@+id/barra_de_acao_homepage" />
+
+    <!-- Ícone de mensagem da barra inferior -->
+
+    <ImageButton
+        android:id="@+id/iconemensagem_homepage"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/iconemensagem_menuinf"
+
+        android:translationZ="90dp"
+        app:layout_constraintStart_toEndOf="@+id/iconecoracao_homepage"
+        app:layout_constraintTop_toTopOf="@+id/barra_de_acao_homepage" />
+
+    <!-- Ícone de casa da barra inferior -->
+
+    <ImageButton
+        android:id="@+id/iconecasa_homepage"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:background="@drawable/iconecasa_menuinf"
+
+        android:translationZ="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iconemensagem_homepage"
+        app:layout_constraintTop_toTopOf="@+id/barra_de_acao_homepage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

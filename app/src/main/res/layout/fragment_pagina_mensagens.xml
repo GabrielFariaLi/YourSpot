@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    tools:context=".fragments.MensagensFragment">
+
+    <!-- menu_superior -->
+    <View
+        android:id="@+id/menu_superior_mensagem"
+        android:layout_width="411dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/menu_superior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/divosoria_mensagem_1"/>
+
+
+    <!-- Logo YourSpot -->
+    <View
+        android:id="@+id/logo_yourspot_mensagem"
+        android:layout_width="92dp"
+        android:layout_height="21dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="154dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/logo_yourspot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Divisoria Laranja 001 -->
+    <View
+        android:id="@+id/divosoria_mensagem_1"
+        android:layout_width="411dp"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/divisoria_laranja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_yourspot_mensagem" />
+
+
+    <!-- Seta de retorno - Mensagens -->
+    <ImageButton
+        android:id="@+id/seta_retorno_pagina_mensagens"
+        android:layout_width="26dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/seta_retorno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Título Mensagens -->
+    <View
+        android:id="@+id/titulo_pagina_mensagens"
+        android:layout_width="232dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginRight="122dp"
+        android:background="@drawable/titulo_pagina_mensagens"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/seta_retorno_pagina_mensagens"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Barra de pesquisa superior -->
+    <SearchView
+        android:id="@+id/barrapesquisa_pagina_mensagens"
+        android:layout_width="360dp"
+        android:layout_height="37dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/barrapesquisa_pagina_mensagens"
+        android:iconifiedByDefault="false"
+        android:measureWithLargestChild="false"
+        android:queryHint="@string/barradepesquisa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_pagina_mensagens" />
+
+    <!-- Retângulo do menu inferior -->
+    <View
+        android:id="@+id/retangulomenuinferior_mensagens"
+        android:layout_width="411dp"
+        android:layout_height="67dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/barra_de_acao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Ícone de pesquisa da barra inferior -->
+
+    <ImageButton
+        android:id="@+id/iconepesquisa_mensagens"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/iconepesquisa_menuinf"
+        android:translationZ="90dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/retangulomenuinferior_mensagens" />
+
+    <!-- Ícone de coração da barra inferior -->
+
+    <ImageButton
+        android:id="@+id/iconecoracao_mensagens"
+        android:layout_width="31dp"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/iconecoracao_menuinf"
+        android:translationZ="90dp"
+        app:layout_constraintStart_toEndOf="@+id/iconepesquisa_mensagens"
+        app:layout_constraintTop_toTopOf="@+id/retangulomenuinferior_mensagens" />
+
+    <!-- Ícone de mensagem da barra inferior -->
+
+    <ImageButton
+        android:id="@+id/iconemensagem_mensagens"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/iconemensagem_menuinf"
+
+        android:translationZ="90dp"
+        app:layout_constraintStart_toEndOf="@+id/iconecoracao_mensagens"
+        app:layout_constraintTop_toTopOf="@+id/retangulomenuinferior_mensagens" />
+
+    <!-- Ícone de casa da barra inferior -->
+
+    <ImageButton
+        android:id="@+id/iconecasa_mensagens"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:background="@drawable/iconecasa_menuinf"
+
+        android:translationZ="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iconemensagem_mensagens"
+        app:layout_constraintTop_toTopOf="@+id/retangulomenuinferior_mensagens" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
