@@ -38,11 +38,10 @@ atividades, direitos e deveres através da customização pessoal. Em épocas in
 
 [Aqui você encontra o plano de gestão do projeto YourSpot.](YourSpot%20Software%20Management%20Plan.pdf)
 
-[Aqui você encontra o plano de arquitetura de dados do YourSpot.](YourSpot%20Estrutura%20de%20Dados.pdf)
 
 ## Calendarização do projeto
 
-[Aqui você encontra a calendarização do projeto representada em um diagrama de Gantt.](YourSpot%20Diagrama%20de%20gantt.png)
+[Aqui você encontra a calendarização do projeto representada em um diagrama de Gantt.](YourSpot%20Diagrama%20de%20gantt.jpg)
 
 O projeto tem 6 metas como principais marcos a se atingir.
 
